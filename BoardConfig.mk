@@ -27,6 +27,7 @@ TARGET_ARCH_VARIANT_CPU := cortex-a15
 
 # Compiler
 TARGET_CLANG_VERSION := msm-3.4
+TARGET_ENABLE_PREBUILT_CLANG := true
 
 # Opts
 WITH_QC_PERF := true
