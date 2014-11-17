@@ -19,7 +19,7 @@
 
 # Kernel
 TARGET_KERNEL_CONFIG := cyanogenmod_bacon_defconfig
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=bacon user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=bacon user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.selinux=permissive
 
 # CPU
 TARGET_ARCH_VARIANT_CPU := cortex-a15
@@ -61,9 +61,8 @@ TARGET_WCNSS_MAC_PREFIX := e8bba8
 BOARD_VOLD_CRYPTFS_MIGRATE := true
 
 BOARD_NFC_CHIPSET := pn547
-BOARD_NFC_HAL_SUFFIX := bacon
 
-#AUDIO_FEATURE_ENABLED_ULTRA_LOW_LATENCY := true
+AUDIO_FEATURE_LOW_LATENCY_PRIMARY := true
 
 # inherit from the proprietary version
 -include vendor/oneplus/bacon/BoardConfigVendor.mk
