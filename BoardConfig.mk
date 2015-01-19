@@ -19,17 +19,7 @@
 
 # Kernel
 TARGET_KERNEL_CONFIG := cyanogenmod_bacon_defconfig
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=bacon user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.selinux=permissive  androidboot.bootdevice=msm_sdcc.1
-
-# CPU
-TARGET_ARCH_VARIANT_CPU := cortex-a15
-
-# Compiler
-TARGET_CLANG_VERSION := msm-3.4
-TARGET_ENABLE_PREBUILT_CLANG := true
-
-# Opts
-TARGET_USE_KRAIT_BIONIC_OPTIMIZATION := true
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=bacon user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=msm_sdcc.1
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/oneplus/bacon/bluetooth
