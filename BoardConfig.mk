@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2016 Tean Exodus
+# Copyright (C) 2016 Team Exodus
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -118,6 +118,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 13271448576
 BOARD_USERDATAEXTRAIMAGE_PARTITION_SIZE := 59914792960
 BOARD_USERDATAEXTRAIMAGE_PARTITION_NAME := 64G
 TARGET_USERIMAGES_USE_EXT4 := true
+BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_USERIMAGES_USE_F2FS := true
 
 # GPS
@@ -195,3 +196,20 @@ endif
 endif
 
 -include vendor/oneplus/bacon/BoardConfigVendor.mk
+
+# Exodus Recovery
+
+
+# Actually use Exodus Recovery (disabled for now: bugs)
+# RECOVERY_VARIANT := exodus
+
+DEVICE_RESOLUTION := 1080x1920
+
+TW_NO_USB_STORAGE := true
+
+# No sdcard here, using /data as replacement
+RECOVERY_SDCARD_ON_DATA := true
+BOARD_HAS_NO_REAL_SDCARD := true
+
+# Activate the special feature to ensure firmware is unmounted for decrypt
+TW_UNMOUNT_FIRMWARE_ON_BOOT := true
