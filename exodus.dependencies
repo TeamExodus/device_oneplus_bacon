@@ -1,14 +1,14 @@
 [
   {
-    "repository": "Exodus-Vendors/oneplus_bacon",
+    "repository": "TeamExodus/vendor_oneplus_bacon",
     "target_path": "vendor/oneplus/bacon"
   },
   {
-    "repository": "Exodus-Kernels/oneplus_bacon",
+    "repository": "TeamExodus/kernel_oneplus_bacon",
     "target_path": "kernel/oneplus/bacon"
   },
   {
-    "repository": "Exodus-Devices/oppo_common",
+    "repository": "TeamExodus/device_oppo_common",
     "target_path": "device/oppo/common"
   }
 ]
