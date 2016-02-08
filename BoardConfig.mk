@@ -200,8 +200,8 @@ endif
 # Exodus Recovery
 
 
-# Actually use Exodus Recovery (disabled for now: bugs)
-# RECOVERY_VARIANT := exodus
+# Actually use Exodus Recovery
+RECOVERY_VARIANT := exodus
 
 DEVICE_RESOLUTION := 1080x1920
 
