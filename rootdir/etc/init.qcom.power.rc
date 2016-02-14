@@ -107,5 +107,4 @@ on property:recovery.perf.mode=0
 on property:dev.bootcomplete=1
     rm /data/system/perfd/default_values
     setprop sys.io.scheduler "bfq"
-    rm /data/system/perfd/default_values
     start mpdecision
