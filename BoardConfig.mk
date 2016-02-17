@@ -97,7 +97,8 @@ ifeq ($(HOST_OS),linux)
   endif
 endif
 
-# Encryption
+# TARGET_TRANSPARENT_COMPRESSION_METHOD := lz4 Encryption
+
 TARGET_HW_DISK_ENCRYPTION := true
 
 # Flags for modem (we still have an old modem)
