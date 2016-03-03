@@ -196,6 +196,10 @@ TARGET_LDPRELOAD := libNimsWrap.so
 endif
 endif
 
+
+# Firmware
+DEVICE_REQUIRES_EXODUS_FIRMWARE := true
+
 -include vendor/oneplus/bacon/BoardConfigVendor.mk
 
 # Exodus Recovery
