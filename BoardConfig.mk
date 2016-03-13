@@ -166,6 +166,10 @@ include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += \
     $(PLATFORM_PATH)/sepolicy
 
+# Firmware
+ADD_RADIO_FILES := true
+TARGET_RELEASETOOLS_EXTENSIONS := device/oneplus/bacon
+
 # Wifi
 BOARD_HAS_QCOM_WLAN              := true
 BOARD_HAS_QCOM_WLAN_SDK          := true
