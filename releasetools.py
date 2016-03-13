@@ -44,10 +44,10 @@ image_partitions = {
 }
 
 def FullOTA_InstallEnd(info):
+  info.script.Print("Writing recommended Exodus Firmware...")
   for k, v in image_partitions.iteritems():
     try:
       img_file = info.input_zip.read("RADIO/" + k)
-      info.script.Print("Writing firmware image " + k + "...")
       InstallImage(k, img_file, v, info)
     except KeyError:
       print "warning: no " + k + " image in input target_files; not flashing " + k
