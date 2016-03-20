@@ -3,10 +3,10 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
 ifeq ($(ADD_RADIO_FILES), true)
-radio_dir := $(LOCAL_PATH)/radio
+radio_dir := $(LOCAL_PATH)/firmware
 RADIO_FILES := $(shell cd $(radio_dir) ; ls)
 $(foreach f, $(RADIO_FILES), \
-    $(call add-radio-file,radio/$(f)))
+    $(call add-radio-file,firmware/$(f)))
 endif
 
 TARGET_BOOTLOADER_EMMC_INTERNAL := $(LOCAL_PATH)/images/emmc_appsboot.mbn
