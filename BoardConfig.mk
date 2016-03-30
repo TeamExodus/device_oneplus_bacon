@@ -215,5 +215,3 @@ TW_NO_USB_STORAGE := true
 RECOVERY_SDCARD_ON_DATA := true
 BOARD_HAS_NO_REAL_SDCARD := true
 
-# Activate the special feature to ensure firmware is unmounted for decrypt
-TW_UNMOUNT_FIRMWARE_ON_BOOT := true
