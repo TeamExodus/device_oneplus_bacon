@@ -50,6 +50,7 @@ ro.data.large_tcp_window_size=true
 # Perf
 ro.qualcomm.perf.cores_online=2
 ro.vendor.extension_library=libqti-perfd-client.so
+ro.sys.fw.bg_apps_limit=20
 
 # Radio
 rild.libpath=/system/vendor/lib/libril-qc-qmi-1.so
