@@ -1081,7 +1081,7 @@
         <ctl name="RX1 MIX1 INP1" value="RX1" />
         <ctl name="CLASS_H_DSM MUX" value="DSM_HPHL_RX1" />
         <ctl name="DAC1 Switch" value="1" />
-        <ctl name="RX1 Digital Volume" value="84" />
+        <ctl name="RX1 Digital Volume" value="100" />
     </path>
     <path name="voip-handset">
         <ctl name="SLIM RX1 MUX" value="AIF1_PB" />
