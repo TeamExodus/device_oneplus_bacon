@@ -128,3 +128,7 @@ PRODUCT_COPY_FILES += \
 # Doze mode
 PRODUCT_PACKAGES += \
     OneplusDoze
+
+# Widevine
+PRODUCT_PACKAGES += \
+    libshim_wvm
