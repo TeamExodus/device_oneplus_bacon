@@ -1,5 +1,4 @@
 allow mediaserver perf_data_file:sock_file write;
 allow mediaserver system_data_file:sock_file write;
-allow mediaserver system_file:file execmod;
 allow mediaserver system_server:unix_stream_socket { read write };
 allow mediaserver audio_device:chr_file { ioctl open read write };
