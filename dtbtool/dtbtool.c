@@ -60,6 +60,10 @@
 #define RC_SUCCESS     0
 #define RC_ERROR       -1
 
+#ifndef PATH_MAX
+#define PATH_MAX 4096 /* Arbitrary value, use with caution */
+#endif
+
 struct chipInfo_t {
   uint32_t chipset;
   uint32_t platform;
