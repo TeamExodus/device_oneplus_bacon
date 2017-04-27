@@ -10,6 +10,9 @@ TARGET_KERNEL_ARCH := arm
 
 -include $(QCPATH)/common/msm8974/BoardConfigVendor.mk
 
+# Include path
+TARGET_SPECIFIC_HEADER_PATH := device/oneplus/bacon/include
+
 #TODO: Fix-me: Setting TARGET_HAVE_HDMI_OUT to false
 # to get rid of compilation error.
 TARGET_HAVE_HDMI_OUT := false
