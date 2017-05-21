@@ -104,6 +104,7 @@ TARGET_RECOVERY_FSTAB = device/oneplus/bacon/rootdir/etc/fstab.qcom
 
 BOARD_NFC_CHIPSET := pn547
 
+BOARD_USES_ALSA_AUDIO := true
 USE_CUSTOM_AUDIO_POLICY := 1
 
 BOARD_SEPOLICY_DIRS += \
