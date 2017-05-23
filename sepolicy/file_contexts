@@ -5,3 +5,6 @@
 /dev/block/platform/msm_sdcc\.1/by-name/oppostanvbk     u:object_r:nvbackup_block_device:s0
 
 /data/misc/perfd/mpctl                                  u:object_r:perf_data_file:s0
+
+# WiFi
+/dev/rfkill    u:object_r:wpa_device:s0
