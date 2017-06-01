@@ -486,6 +486,9 @@ on property:ro.data.large_tcp_window_size=true
 
 service charger /charger
     class charger
+    critical
+    group system graphics
+    seclabel u:r:healthd:s0
 
 service ssr_diag /system/bin/ssr_diag
     class late_start
@@ -503,16 +506,6 @@ on property:persist.usb.hvdcp.detect=true
 
 on property:persist.usb.hvdcp.detect=false
     stop hvdcp
-
-service qbcharger /charger -m 1
-    disabled
-    oneshot
-
-on property:sys.qbcharger.enable=true
-    start qbcharger
-
-on property:sys.qbcharger.enable=false
-    stop qbcharger
 
 # Fix rear cam not working until next reboot
 on property:sys.boot_completed=1
