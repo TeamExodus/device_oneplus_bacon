@@ -10,6 +10,11 @@ TARGET_KERNEL_ARCH := arm
 
 -include $(QCPATH)/common/msm8974/BoardConfigVendor.mk
 
+# Audio/media/display
+TARGET_QCOM_DISPLAY_VARIANT := caf/msm8974
+TARGET_QCOM_AUDIO_VARIANT := caf/msm8974
+TARGET_QCOM_MEDIA_VARIANT := caf/msm8974
+
 # Include path
 TARGET_SPECIFIC_HEADER_PATH := device/oneplus/bacon/include
 
