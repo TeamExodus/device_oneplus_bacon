@@ -1,4 +1,38 @@
 [
     {
+        "remote":       "github",
+        "repository":   "TeamExodus/device_oneplus_bacon",
+        "target_path":  "device/oneplus/bacon",
+        "revision":     "EXODUS-7.1"
+    },
+    {
+        "remote":       "github",
+        "repository":   "TeamExodus/kernel_oneplus_msm8974",
+        "target_path":  "kernel/oneplus/msm8974",
+        "revision":     "EXODUS-7.1"
+    },
+    {
+        "remote":       "github",
+        "repository":   "TeamExodus/hardware_qcom_audio-caf_msm8974",
+        "target_path":  "hardware/qcom/audio-caf_msm8974",
+        "revision":     "EXODUS-7.1"
+    },
+    {
+        "remote":       "github",
+        "repository":   "TeamExodus/hardware_qcom_display-caf_msm8974",
+        "target_path":  "hardware/qcom/display-caf/msm8974",
+        "revision":     "EXODUS-7.1"
+    },
+    {
+        "remote":       "github",
+        "repository":   "TeamExodus/hardware_qcom_media-caf_msm8974",
+        "target_path":  "hardware/qcom/media-caf_msm8974",
+        "revision":     "EXODUS-7.1"
+    },
+    {
+        "remote":       "github",
+        "repository":   "TeamExodus/vendor_oneplus_bacon",
+        "target_path":  "vendor/oneplus/bacon",
+        "revision":     "EXODUS-7.1"
     }
 ]
